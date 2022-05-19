@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	scroll-snap-type: none;
 	background: linear-gradient(
 		180deg,
 		rgba(25, 54, 94, 1) 0%,

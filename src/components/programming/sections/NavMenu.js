@@ -7,7 +7,6 @@ import {
 } from "react-icons/io";
 import { DiReact } from "react-icons/di";
 import { Link } from "react-scroll";
-import useIntersection from "../../useIntersection";
 
 const NavMenu = () => {
 	return (
