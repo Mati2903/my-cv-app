@@ -1,0 +1,34 @@
+.back__button {
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	top: 10px;
+	background-color: transparent;
+	color: white;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	font-family: "Montserrat", "Arial", sans-serif;
+	border: none;
+	text-align: center;
+	padding: auto;
+	&:hover {
+		svg {
+			animation: arrowMove 1s ease-in-out both infinite;
+		}
+	}
+	svg {
+		font-size: 2.5rem;
+	}
+}
+
+@keyframes arrowMove {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(4px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}

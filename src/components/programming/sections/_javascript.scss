@@ -1,0 +1,62 @@
+.javascript__section {
+	height: 100vh;
+	background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+		url("../../../assets/images/javascript-background.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//-------- mniejsze ekrany ------------
+	@media screen and (max-width: 600px) {
+		flex-direction: column-reverse;
+		gap: 4rem;
+		padding: 0 10px 130px;
+		.javascript__logo {
+			font-size: 15rem;
+		}
+		.javascript__text {
+			font-size: 2rem;
+		}
+	}
+
+	.javascript__logo {
+		color: rgb(240, 219, 79);
+	}
+
+	.javascript__text {
+		color: rgb(240, 219, 79);
+		font-weight: 600;
+		text-align: center;
+	}
+
+	&.active {
+		//-------- większe ekrany --------------
+		@media screen and (min-width: 601px) {
+			.javascript__logo {
+				opacity: 0;
+				flex-grow: 1;
+				animation: logoJavaScriptOnLoad 1.5s cubic-bezier(0, 0.63, 0.61, 0.99)
+					0.5s both;
+			}
+			.javascript__text {
+				font-size: 3rem;
+				flex-grow: 2;
+				opacity: 0;
+				animation: textAnimation 1s ease-in 0.5s both;
+			}
+		}
+	}
+
+	//------- animacje---------------
+	@keyframes logoJavaScriptOnLoad {
+		from {
+			font-size: 15rem;
+		}
+
+		to {
+			font-size: 30rem;
+			opacity: 1;
+		}
+	}
+}

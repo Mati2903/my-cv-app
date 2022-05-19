@@ -1,0 +1,27 @@
+@import "./reset";
+@import "./variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./back";
+@import "./starting-page";
+@import "./loading-spinner";
+@import "../../components/electronics/electronics";
+@import "../../components/electronics/sections/computer";
+@import "../../components/electronics/sections/pcb";
+@import "../../components/electronics/sections/repair";
+@import "../../components/electronics/sections/car";
+@import "../../components/programming/programming";
+@import "./nav";
+@import "../../components/programming/sections/html";
+@import "../../components/programming/sections/css";
+@import "../../components/programming/sections/javascript";
+@import "../../components/programming/sections/node";
+@import "../../components/programming/sections/react";
+
+html {
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+
+.body {
+	font-family: "Montserrat", "Roboto", sans-serif;
+}

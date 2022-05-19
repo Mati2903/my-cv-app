@@ -1,0 +1,12 @@
+.electronics-section {
+	height: 100vh;
+	scroll-snap-align: start;
+	font-family: "Montserrat", "Arial", sans-serif;
+
+	.electronics-section__div {
+		// position: relative;
+		width: 100%;
+		height: 100%;
+		color: aliceblue;
+	}
+}

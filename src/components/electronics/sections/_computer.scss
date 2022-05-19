@@ -1,0 +1,92 @@
+//---------sekcja z komputerem -------------
+.electronics-section__computer {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+
+	//optymalizacja zdjęć
+	@media screen and (min-width: 1025px) {
+		background-image: url("../../../assets/images/computer_1080p.jpg");
+	}
+	@media screen and (min-width: 601px) and (max-width: 1024px) {
+		background-image: url("../../../assets/images/computer_720p.jpg");
+	}
+
+	@media screen and (max-width: 600px) {
+		background-image: url("../../../assets/images/computer_480p.jpg");
+	}
+
+	&.active {
+		animation: opacityOnSection 1.5s ease-out 0.5s both;
+	}
+}
+
+.electronics-section__computer-article {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	opacity: 0;
+	.electronics-section__computer-paragraph {
+		opacity: 0;
+	}
+	&.active {
+		animation: fadeInArticle 1.5s ease 1s both;
+		.electronics-section__computer-paragraph {
+			animation: fadeInParagraph 1.5s ease 1s both;
+		}
+	}
+}
+
+@keyframes opacityOnSection {
+	from {
+		filter: brightness(100%);
+	}
+	to {
+		filter: brightness(33%);
+	}
+}
+
+//----------- mniejsze ekrany --------------
+@media screen and (max-width: 600px) {
+	.electronics-section__computer-article {
+		opacity: 1 !important;
+		font-size: 3rem;
+		filter: brightness(100%);
+		.electronics-section__computer-paragraph {
+			opacity: 1 !important;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+//---------- większe ekrany -----------------
+@media screen and (min-width: 601px) {
+	@keyframes fadeInArticle {
+		from {
+			opacity: 0;
+			font-size: 1rem;
+		}
+		to {
+			opacity: 1;
+			font-size: 5rem;
+			filter: brightness(100%);
+		}
+	}
+
+	//----------- animacje ------------------
+	@keyframes fadeInParagraph {
+		from {
+			opacity: 0;
+			font-size: 0.5rem;
+		}
+		to {
+			opacity: 1;
+			font-size: 2rem;
+		}
+	}
+}

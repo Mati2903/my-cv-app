@@ -1,0 +1,116 @@
+.css__section {
+	height: 100vh;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+		url("../../../assets/images/css-background.jpg");
+	background-size: cover;
+	background-position: left center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+	//------ mniejsze ekrany --------
+	@media screen and (max-width: 600px) {
+		.css__about {
+			flex-direction: column-reverse;
+			padding: 50px 10px 0;
+			.css__text {
+				flex-grow: 1;
+				font-size: 1.7rem;
+			}
+			.css__logo {
+				font-size: 10rem;
+				flex-grow: 1;
+			}
+		}
+
+		.sass__about {
+			flex-direction: column;
+			padding: 0 10px 100px !important;
+			.sass__text {
+				flex-grow: 1;
+				font-size: 1.7rem;
+			}
+			.sass__logo {
+				font-size: 10rem;
+				flex-grow: 1;
+			}
+		}
+	}
+
+	.css__about {
+		flex-grow: 1;
+		height: 50%;
+		opacity: 1;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	.sass__about {
+		flex-grow: 1;
+		padding: 0 20px;
+		height: 50%;
+		opacity: 1;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	&.active {
+		.css__about {
+			.css__text {
+				flex-grow: 2;
+				font-weight: 600;
+				color: rgb(38, 77, 228);
+				//-------- większe ekrany ------------
+				@media screen and (min-width: 601px) {
+					font-size: 3rem;
+					animation: textAnimation 1s ease-in 0.5s both;
+				}
+			}
+			.css__logo {
+				flex-grow: 1;
+				color: rgb(38, 77, 228);
+				//------ większe ekrany ------------
+				@media screen and (min-width: 601px) {
+					opacity: 0;
+					animation: logoCSSOnLoad 1.5s cubic-bezier(0, 0.63, 0.61, 0.99) 0.5s
+						both;
+				}
+			}
+		}
+
+		.sass__about {
+			.sass__text {
+				font-weight: 600;
+				color: rgb(205, 103, 153);
+				//----- większe ekrany ----------
+				@media screen and (min-width: 601px) {
+					font-size: 3rem;
+					flex-grow: 2;
+					animation: textAnimation 1s ease-in 1s both;
+				}
+			}
+			.sass__logo {
+				flex-grow: 1;
+				color: rgb(205, 103, 153);
+				//---------- większe ekrany ----------
+				@media screen and (min-width: 601px) {
+					opacity: 0;
+					animation: logoCSSOnLoad 1.5s cubic-bezier(0, 0.63, 0.61, 0.99) 1s
+						both;
+				}
+			}
+		}
+	}
+
+	@keyframes logoCSSOnLoad {
+		from {
+			font-size: 10rem;
+		}
+
+		to {
+			font-size: 23rem;
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+.html__section {
+	height: 100vh;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+		url("../../../assets/images/html-background.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//------ mniejsze ekrany -------------
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+		gap: 4rem;
+		padding: 0 10px 130px;
+		.html__logo {
+			opacity: 1 !important;
+			font-size: 15rem;
+		}
+		.html__text {
+			opacity: 1 !important;
+			font-size: 2rem;
+		}
+	}
+
+	.html__logo {
+		opacity: 0;
+		color: rgb(227, 76, 38);
+	}
+
+	.html__text {
+		color: rgb(227, 76, 38);
+		font-weight: 600;
+		text-align: center;
+		opacity: 0;
+	}
+
+	&.active {
+		//----- większe ekrany ------------
+		@media screen and (min-width: 601px) {
+			.html__logo {
+				flex-grow: 1;
+				animation: logoHTMLOnLoad 1.5s cubic-bezier(0, 0.63, 0.61, 0.99) 0.5s
+					both;
+			}
+
+			.html__text {
+				font-size: 3rem;
+				flex-grow: 2;
+				animation: textAnimation 1s ease-in 0.5s both;
+			}
+		}
+	}
+
+	//------- animacje ---------------
+
+	@keyframes logoHTMLOnLoad {
+		from {
+			opacity: 0;
+			font-size: 15rem;
+		}
+
+		to {
+			font-size: 30rem;
+			opacity: 1;
+		}
+	}
+	@keyframes textAnimation {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
