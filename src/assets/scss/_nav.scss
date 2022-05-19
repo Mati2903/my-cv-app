@@ -26,6 +26,7 @@ nav {
 
 		&:hover {
 			background: rgba(0, 0, 0, 0.2);
+			cursor: pointer;
 			color: $programming-starting;
 		}
 		&:nth-child(1).active {
