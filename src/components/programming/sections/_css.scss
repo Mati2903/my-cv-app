@@ -44,6 +44,9 @@
 		align-items: center;
 		text-align: center;
 		color: rgb(38, 77, 228);
+		.css__text {
+			font-weight: 600;
+		}
 	}
 
 	.sass__about {
@@ -55,13 +58,16 @@
 		align-items: center;
 		text-align: center;
 		color: rgb(205, 103, 153);
+		.sass__text {
+			font-weight: 600;
+		}
 	}
 
 	&.active {
 		.css__about {
 			.css__text {
 				flex-grow: 2;
-				font-weight: 600;
+
 				//-------- większe ekrany ------------
 				@media screen and (min-width: 1025px) {
 					font-size: 3rem;
@@ -81,7 +87,6 @@
 
 		.sass__about {
 			.sass__text {
-				font-weight: 600;
 				//----- większe ekrany ----------
 				@media screen and (min-width: 1025px) {
 					font-size: 3rem;
