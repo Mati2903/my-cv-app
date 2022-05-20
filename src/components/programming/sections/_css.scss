@@ -8,7 +8,7 @@
 	flex-direction: column;
 	flex-wrap: no-wrap;
 	//------ mniejsze ekrany --------
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 1024px) {
 		.css__about {
 			flex-direction: column-reverse;
 			padding: 50px 10px 0;
@@ -62,7 +62,7 @@
 				font-weight: 600;
 				color: rgb(38, 77, 228);
 				//-------- większe ekrany ------------
-				@media screen and (min-width: 601px) {
+				@media screen and (min-width: 1025px) {
 					font-size: 3rem;
 					animation: textAnimation 1s ease-in 0.5s both;
 				}
@@ -71,7 +71,7 @@
 				flex-grow: 1;
 				color: rgb(38, 77, 228);
 				//------ większe ekrany ------------
-				@media screen and (min-width: 601px) {
+				@media screen and (min-width: 1025px) {
 					opacity: 0;
 					animation: logoCSSOnLoad 1.5s cubic-bezier(0, 0.63, 0.61, 0.99) 0.5s
 						both;
@@ -84,7 +84,7 @@
 				font-weight: 600;
 				color: rgb(205, 103, 153);
 				//----- większe ekrany ----------
-				@media screen and (min-width: 601px) {
+				@media screen and (min-width: 1025px) {
 					font-size: 3rem;
 					flex-grow: 2;
 					animation: textAnimation 1s ease-in 1s both;
@@ -94,7 +94,7 @@
 				flex-grow: 1;
 				color: rgb(205, 103, 153);
 				//---------- większe ekrany ----------
-				@media screen and (min-width: 601px) {
+				@media screen and (min-width: 1025px) {
 					opacity: 0;
 					animation: logoCSSOnLoad 1.5s cubic-bezier(0, 0.63, 0.61, 0.99) 1s
 						both;

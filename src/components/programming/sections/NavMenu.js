@@ -6,7 +6,7 @@ import {
 	IoLogoNodejs,
 } from "react-icons/io";
 import { DiReact } from "react-icons/di";
-import { Link } from "react-scroll";
+import { Link, Button } from "react-scroll";
 
 const NavMenu = () => {
 	return (
