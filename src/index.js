@@ -3,6 +3,10 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./assets/scss/style.scss";
+import { AwakeHeroku } from "awake-heroku";
+
+AwakeHeroku.add("https://mazurek-cv.herokuapp.com");
+AwakeHeroku.start();
 
 ReactDOM.render(
 	<BrowserRouter>
