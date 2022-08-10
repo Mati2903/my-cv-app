@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import Loading from "../Loading";
 import Back from "../Back";
+import Github from "./Github";
 
 const Html = React.lazy(() => import("./sections/Html"));
 const Css = React.lazy(() => import("./sections/Css"));
@@ -13,6 +14,7 @@ const Programming = () => {
 	return (
 		<Suspense fallback={<Loading />}>
 			<Back />
+			<Github />
 			<NavMenu />
 			<Html />
 			<Css />

@@ -4,10 +4,6 @@ import Loading from "./components/Loading";
 import Electronics from "./components/electronics/Electronics";
 import Programming from "./components/programming/Programming";
 const StartingPage = React.lazy(() => import("./StartingPage"));
-import { AwakeHeroku } from "awake-heroku";
-
-AwakeHeroku.add("https://mazurek-cv.herokuapp.com");
-AwakeHeroku.start();
 
 function App() {
 	return (
