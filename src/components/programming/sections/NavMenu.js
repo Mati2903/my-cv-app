@@ -16,6 +16,7 @@ const NavMenu = () => {
 				spy={true}
 				smooth={true}
 				duration={150}
+				delay={50}
 				className="nav-link html"
 				activeClass="active"
 			>
@@ -26,6 +27,7 @@ const NavMenu = () => {
 				spy={true}
 				smooth={true}
 				duration={150}
+				delay={50}
 				className="nav-link css"
 				activeClass="active"
 			>
