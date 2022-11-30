@@ -27,7 +27,7 @@ const Medical = () => {
 					<article className="electronics-section__medical-article">
 						Aparatura medyczna
 						<p className="electronics-section__medical-paragraph">
-							Diagnostyka, naprawa oraz przeglady techniczne urządzeń
+							Diagnostyka, naprawa oraz przeglądy techniczne urządzeń
 							<br />w placówkach medycznych na terenie kraju
 						</p>
 					</article>
