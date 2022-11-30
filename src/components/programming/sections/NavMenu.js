@@ -15,7 +15,6 @@ const NavMenu = () => {
 				to="html"
 				spy={true}
 				smooth={true}
-				offset={0}
 				duration={150}
 				className="nav-link html"
 				activeClass="active"
@@ -26,7 +25,6 @@ const NavMenu = () => {
 				to="css"
 				spy={true}
 				smooth={true}
-				offset={0}
 				duration={150}
 				className="nav-link css"
 				activeClass="active"
@@ -64,44 +62,6 @@ const NavMenu = () => {
 				<IoLogoNodejs />
 			</Link>
 		</nav>
-		// <nav>
-		// 	<a
-		// 		href="#html"
-		// 		onClick={() => setActiveNav("#html")}
-		// 		className={activeNav === "#html" ? "active" : ""}
-		// 	>
-		// 		<IoLogoHtml5 />
-		// 	</a>
-
-		// 	<a
-		// 		href="#css"
-		// 		onClick={() => setActiveNav("#css")}
-		// 		className={activeNav === "#css" ? "active" : ""}
-		// 	>
-		// 		<IoLogoCss3 />
-		// 	</a>
-		// 	<a
-		// 		href="#javascript"
-		// 		onClick={() => setActiveNav("#javascript")}
-		// 		className={activeNav === "#javascript" ? "active" : ""}
-		// 	>
-		// 		<IoLogoJavascript />
-		// 	</a>
-		// 	<a
-		// 		href="#react"
-		// 		onClick={() => setActiveNav("#react")}
-		// 		className={activeNav === "#react" ? "active" : ""}
-		// 	>
-		// 		<DiReact />
-		// 	</a>
-		// 	<a
-		// 		href="#node"
-		// 		onClick={() => setActiveNav("#node")}
-		// 		className={activeNav === "#node" ? "active" : ""}
-		// 	>
-		// 		<IoLogoNodejs />
-		// 	</a>
-		// </nav>
 	);
 };
 
